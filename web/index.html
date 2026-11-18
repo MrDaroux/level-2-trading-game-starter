@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="request-token" content="__REQUEST_TOKEN__">
+  <title>Trading game starter</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+<main>
+  <header><p class="eyebrow">LEVEL 2 · PYTHON + SQLITE</p>
+    <h1>Trading game</h1>
+    <p>A browser interface for your Python program.</p>
+  </header>
+  <section aria-labelledby="display-heading">
+    <h2 id="display-heading">Game display</h2>
+    <pre id="output" tabindex="0">The browser interface is ready. The game is not built yet.
+
+Type in the boxes and press a button to see the input reach Python.
+No market data or game rules have been supplied.</pre>
+  </section>
+  <form id="controls">
+    <fieldset id="inputs">
+      <legend>Your action</legend>
+      <div class="fields">
+        <label>Market<input id="market" name="market" type="text" autocomplete="off"></label>
+        <label>Good<input id="good" name="good" type="text" autocomplete="off"></label>
+        <label>Quantity<input id="quantity" name="quantity" type="text" autocomplete="off"></label>
+      </div>
+      <p class="hint">Your Python code decides which boxes are needed and checks their contents.</p>
+      <div class="buttons">
+        <button type="submit" value="View">View</button>
+        <button type="submit" value="Travel">Travel</button>
+        <button type="submit" value="Buy">Buy</button>
+        <button type="submit" value="Sell">Sell</button>
+        <button type="submit" value="New game" class="secondary">New game</button>
+      </div>
+    </fieldset>
+  </form>
+  <p id="status" role="status" aria-live="polite">Ready.</p>
+  <p class="hint">Starter only: buttons do not yet carry out game actions.</p>
+</main>
+</body>
+</html>

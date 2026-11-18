@@ -1,0 +1,10 @@
+{
+  "name": "Trading game",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "yy0931.vscode-sqlite3-editor"
+      ]
+    }
+  }
+}

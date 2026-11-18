@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+game.sqlite3-journal
+game.sqlite3-wal
+game.sqlite3-shm
